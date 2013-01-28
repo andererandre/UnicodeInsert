@@ -1,0 +1,22 @@
+[
+    {
+        "caption": "Tools",
+        "mnemonic": "t",
+        "id": "tools",
+        "children":
+        [
+            {
+                "caption": "Unicode Character",
+                "mnemonic": "u",
+                "id": "unicode_characters",
+                "children":
+                [
+                    {
+                        "command": "unicode_insert",
+                        "caption": "Insert From Name"
+                    }
+                ]
+            }
+        ]
+    }
+]
