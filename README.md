@@ -13,4 +13,4 @@ Default Hotkeys
 Screenshots
 -----------
 
-![screenshot-01.png](img/screenshot-01.png "Screenshot 01")
+![screenshot-01.png](https://raw.github.com/modmonkeys/UnicodeInsert/master/img/screenshot-01.png "Screenshot 01")
