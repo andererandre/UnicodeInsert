@@ -129,15 +129,12 @@ class UnicodeInsertCommand(sublime_plugin.TextCommand):
             else:
                 char = unicodedata.lookup(input)
 
-            edit = self.view.begin_edit()
-            for sel in self.view.sel():
-                self.view.insert(edit, sel.begin(), char)
-            self.view.end_edit(edit)
+            self.view.run_command("insert_snippet", {"contents": char})
 
             sublime.status_message("Character inserted: " + char)
 
         except Exception as e:
-            sublime.status_message("Character not found: " + input + " (" + str(e) + ")")
+            sublime.status_message("Character could not be inserted: " + input + " (" + str(e) + ")")
 
     def on_change(self, input):
         return
